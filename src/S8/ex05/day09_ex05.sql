@@ -1,0 +1,14 @@
+-- 1
+SELECT SUM(rating) FROM pizzeria;
+-- 2
+INSERT INTO pizzeria VALUES (10, 'Kazan Pizza', 5);
+-- 2
+COMMIT;
+-- 1
+SELECT SUM(rating) FROM pizzeria;
+-- 1
+COMMIT;
+-- 1
+SELECT SUM(rating) FROM pizzeria;
+-- 2
+SELECT SUM(rating) FROM pizzeria;
